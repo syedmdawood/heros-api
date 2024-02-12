@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    background-color: rgb(216, 211, 211);
+    padding-top: 20px;
+}
+.heros{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: 30px;
+    width: 350px;
+    gap: 50px;
+    margin-left: 60px;
+}
+.heros img{
+    width: 350px;
+    height: 420px;
+    border-radius: 1rem;
+}
+.card{
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px rgb(99, 101, 99);
+    border-radius: 1rem;
+    padding-bottom: 7px;
+    height: 580px;
+    position: relative;
+}
+.content{
+    padding: 10px 10px;
+}
+.content h3 span{
+    font-weight: 400;
+    font-size: 17px;
+    padding: 4px 0;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    position: absolute;
+    bottom: 10px;
+}
+.btn button{
+    border: none;
+    background-color: rgba(69, 69, 69, 0.721);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 1rem;
+    margin: 0 4px;
+}
+.power{
+    display: none;
+    padding: 10px;
+    width: 100%;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.667);
+    color: white;
+    position: absolute;
+    border-radius: 1rem;
+}
+.power h2{
+    margin: 20px 0;
+}
+.power h3{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.power h3 span{
+    font-weight: 400;
+    font-size: 17px;
+    padding: 4px 0;
+    text-align: right;
+} 
+
+
+
+
+.appearance{
+    display: none;
+    padding: 10px;
+    width: 100%;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.667);
+    color: white;
+    position: absolute;
+    border-radius: 1rem;
+}
+.appearance h2{
+    margin: 20px 0;
+}
+.appearance h3{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.appearance h3 span{
+    font-weight: 400;
+    font-size: 17px;
+    padding: 4px 0;
+    text-align: right;
+} 
+
+
+
+
+.biography{
+    display: none;
+    padding: 10px;
+    width: 100%;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.667);
+    color: white;
+    position: absolute;
+    border-radius: 1rem;
+}
+.biography h2{
+    margin: 20px 0;
+}
+.biography h3{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.biography h3 span{
+    font-weight: 400;
+    font-size: 17px;
+    padding: 4px 0;
+    text-align: right;
+} 
