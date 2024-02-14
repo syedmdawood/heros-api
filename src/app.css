@@ -10,6 +10,17 @@
     background-color: rgb(216, 211, 211);
     padding-top: 20px;
 }
+.input{
+    position: relative;
+    margin-left: 77%;
+    cursor: pointer;
+}
+.input label{
+    font-weight: bold;
+}
+.input input{
+    background-color: rgb(216, 211, 211);
+}
 .heros{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);

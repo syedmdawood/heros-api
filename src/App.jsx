@@ -6,6 +6,7 @@ const App = () => {
   const [showPower, setShowPower] = useState(false);
   const [showAppearance, setShowAappearance] = useState(false);
   const[biography, setBiography] = useState(false);
+  const [query ,setQuery] = useState("")
 
   const fetchHeros = async () => {
     const response = await fetch("https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json");
@@ -42,8 +43,14 @@ const App = () => {
         <div className="head">
           <center><h1>Hero's Api</h1></center>
         </div>
+        <div className="input">
+        <label htmlFor="">Search</label> <input type="text" onChange={(e)=>setQuery(e.target.value)} />
+        </div>
+
         <div className="heros">
-          {heros.map((myHero) => {
+          {heros.filter((myHero)=>{
+            return myHero.name.toLowerCase().startsWith(query)
+          }).map((myHero) => {
             return (
               <div className='card' key={myHero.id}>
                 <div className="power" style={{ display: showPower ? 'block' : 'none' }}>
